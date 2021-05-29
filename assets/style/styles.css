@@ -1,0 +1,67 @@
+/* stylelint-disable */
+/* Import font */
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'),
+    url('~/assets/font/poppinsFont/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('PlayfairDisplay'),
+    url('~/assets/font/playfairDisplayFont/static/PlayfairDisplay-Regular.ttf')
+      format('truetype');
+}
+
+/* style - logo */
+.logo {
+  width: 150px;
+  font-family: 'Poppins';
+}
+
+.poppins-font,
+.foot li,
+.foot p,
+.map p,
+.icons p,
+.text p,
+.subheader-content,
+.customer p,
+.box-content p,
+.box-content a {
+  font-family: 'Poppins';
+}
+/* index-page header font family */
+.header-content-index,
+.header-content,
+.body-box h1,
+.box-content h2,
+.box-content-finder h2,
+.playfair-font,
+.paragraph p {
+  font-family: 'Playfair Display';
+}
+/* navigation menu */
+.navbar-link {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  color: #000 !important;
+  padding: 7px 10px;
+}
+.navbar-link:hover {
+  background-color: #c9fd6a;
+  text-decoration: none !important;
+}
+.navbar-link:hover {
+  text-decoration: none !important;
+}
+
+@media only screen and (max-width: 640px) {
+  .logo {
+    width: 100px;
+  }
+}

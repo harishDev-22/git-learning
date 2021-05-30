@@ -27,17 +27,19 @@
 .subheader-content,
 .customer p,
 .box-content p,
-.box-content a {
+.box-content a,
+.content p {
   font-family: 'Poppins';
 }
 /* index-page header font family */
+.playfair-font,
 .header-content-index,
 .header-content,
 .body-box h1,
 .box-content h2,
 .box-content-finder h2,
-.playfair-font,
-.paragraph p {
+.paragraph p,
+.content h2 {
   font-family: 'Playfair Display';
 }
 /* navigation menu */

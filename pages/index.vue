@@ -931,11 +931,6 @@ export default {
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
-  .map {
-    width: 90%;
-    margin: 5%;
-    padding-left: 10%;
-  }
   .box-video-content,
   .box-video-content-company {
     flex-direction: column;

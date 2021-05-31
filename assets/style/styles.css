@@ -28,7 +28,8 @@
 .customer p,
 .box-content p,
 .box-content a,
-.content p {
+.content p,
+.foot a {
   font-family: 'Poppins';
 }
 /* index-page header font family */

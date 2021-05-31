@@ -7,100 +7,67 @@
       <div class="footer-line">
         <div class="footer-content">
           <div class="foot">
-            <ul>
-              <p>Menu</p>
-              <a href="views/about.html">
-                <li>About</li>
-              </a>
-              <a href="index.html">
-                <li>Home</li>
-              </a>
-              <a href="views/mockinterview.html" target="blank">
-                <li>Mock Interview</li>
-              </a>
-              <a href="views/student_mentoring.html" target="blank">
-                <li>Student Programs</li>
-              </a>
-              <a
-                href="https://recruit.zohopublic.com/recruit/Portal.na?iframe=false&digest=.WsqhQLLOxoxOoGMDi%40yUnGAUnkE7bVo.a85bxdBEmQ-"
-                target="blank"
-              >
-                <li>Career</li>
-              </a>
-              <a href="http://bit.ly/spotknack_career_document" target="blank">
-                <li>Contribute</li>
-              </a>
-            </ul>
+            <p>Menu</p>
+            <NuxtLink to="/"> Home </NuxtLink>
+            <NuxtLink to="/about">About </NuxtLink>
+            <NuxtLink
+              v-b-tooltip.hover
+              title=" Mock Interview"
+              to="/mockInterview"
+            >
+              Mock Interview
+            </NuxtLink>
+            <NuxtLink to="/mockInterview"> Student Programs </NuxtLink>
+
+            <a
+              href="https://recruit.zohopublic.com/recruit/Portal.na?iframe=false&digest=.WsqhQLLOxoxOoGMDi%40yUnGAUnkE7bVo.a85bxdBEmQ-"
+              target="blank"
+            >
+              Career
+            </a>
+            <a href="http://bit.ly/spotknack_career_document" target="blank">
+              Contribute
+            </a>
           </div>
           <div class="foot">
-            <ul>
-              <p>Resources</p>
-              <a href="https://blog.spotknack.com" target="blank">
-                <li>Blog</li>
-              </a>
-              <a href="views/faq.html" target="">
-                <li>FAQ</li>
-              </a>
-
-              <a href="views/guidelines.html" target="blank">
-                <li>Guidelines</li>
-              </a>
-              <a href="views/terms and conditions.html" target="blank">
-                <li>Terms and Conditions</li>
-              </a>
-              <a href="views/privacypolicy.html" target="blank">
-                <li>Privacy Policy</li>
-              </a>
-            </ul>
+            <p>Resources</p>
+            <a href="https://blog.spotknack.com" target="blank"> Blog </a>
+            <NuxtLink to="/">FAQ </NuxtLink>
+            <NuxtLink to="/">Guidelines </NuxtLink>
+            <NuxtLink to="/">Terms and Conditions </NuxtLink>
+            <NuxtLink to="/">Privacy Policy </NuxtLink>
+          </div>
+          <div class="foot">
+            <p>Company</p>
+            <NuxtLink to="/">Mentees </NuxtLink>
+            <a href="https://spotknack.com/views/mission2021/">
+              Mission 2021
+            </a>
+            <NuxtLink to="/">Campus Ambassadors </NuxtLink>
+            <NuxtLink to="/">Spotknack for Startups </NuxtLink>
+            <NuxtLink to="/">Spotknack for Educators </NuxtLink>
+            <NuxtLink to="/">Donate </NuxtLink>
           </div>
 
           <div class="foot">
-            <ul>
-              <p>Company</p>
-              <a href="views/mentees.html">
-                <li>Mentees</li>
-              </a>
-              <a href="https://spotknack.com/views/mission2021/">
-                <li>Mission 2021</li>
-              </a>
-              <a href="views/campus_ambassadors/index.html" target="blank">
-                <li>Campus Ambassadors</li>
-              </a>
-
-              <a href="views/startups.html" target="">
-                <li>Spotknack for Startups</li>
-              </a>
-              <a href="views/educators.html" target="">
-                <li>Spotknack for Educators</li>
-              </a>
-              <a href="views/donate.html" target="">
-                <li>Donate</li>
-              </a>
-            </ul>
-          </div>
-          <div class="foot">
-            <ul>
-              <p>Featured On</p>
-              <a
-                href="https://www.edexlive.com/happening/2021/mar/17/heres-how-spotknack-is-securing-employment-opportunities-for-the-average-student-19088.html"
-              >
-                <li>Indian Express - Edex</li>
-              </a>
-            </ul>
+            <p>Featured On</p>
+            <a
+              href="https://www.edexlive.com/happening/2021/mar/17/heres-how-spotknack-is-securing-employment-opportunities-for-the-average-student-19088.html"
+            >
+              Indian Express - Edex
+            </a>
           </div>
         </div>
         <!--Google map integration -->
 
         <div class="map">
-          <ul>
-            <p>Come meet us here</p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.4328324686107!2d76.98652631480348!3d11.081083792115216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e517072b067391b!2siBevy+Forte!5e0!3m2!1sen!2sin!4v1562062625961!5m2!1sen!2sin"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen
-            ></iframe>
-          </ul>
+          <p>Come meet us here !</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.4328324686107!2d76.98652631480348!3d11.081083792115216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e517072b067391b!2siBevy+Forte!5e0!3m2!1sen!2sin!4v1562062625961!5m2!1sen!2sin"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
       <!--social media icons -->
@@ -142,23 +109,21 @@ export default {
 <style>
 /*  footer */
 .footer {
-  padding-top: 100px;
-  padding-bottom: 20px;
   width: 100%;
   background-color: #131415;
   height: auto;
+  padding: 100px 0 20px 8.6%;
 }
 .footer-line {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-.spot {
-  padding-left: 5%;
-}
 
 .foot {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .foot a {
   text-decoration: none;
@@ -169,31 +134,30 @@ export default {
   list-style-type: none;
   font-size: 1rem;
 }
+.map {
+  width: 26.3%;
+  padding-right: 8.5%;
+}
 .map li {
   list-style-type: none;
 }
 .map iframe {
   border-radius: 20px;
-  width: 70%;
+  width: 100%;
   height: 60%;
 }
 .footer-content {
-  width: 70%;
+  width: 73.7%;
   display: flex;
   flex-direction: row;
-  padding-left: 5%;
 }
 
 /*  social icons in the footer */
 
-.social-icons {
-  padding-left: 7.5%;
-}
 .icons a {
   padding-right: 2%;
 }
 .copyright {
-  padding-left: 7.5%;
   padding-top: 1%;
 }
 .foot p {
@@ -221,6 +185,39 @@ export default {
   width: 100%;
   margin-top: 80px;
 }
+.foot a:hover,
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-line {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foot li {
+    font-size: 1rem;
+  }
+
+  .map {
+    width: 50%;
+    margin: 0;
+    padding-left: 0;
+  }
+  .social-icons {
+    margin-top: 10px;
+  }
+  .copyright {
+    margin-top: 20px;
+  }
+}
 @media only screen and (max-width: 640px) {
   .footer-line {
     display: flex;
@@ -244,21 +241,13 @@ export default {
     padding-left: 0;
     width: auto;
   }
-}
-@media only screen and (max-width: 768px) {
-  .footer-line {
-    display: flex;
-    flex-direction: column;
+  .map {
     width: 100%;
+    margin: 0;
+    padding-left: 0;
   }
-
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .foot li {
-    font-size: 1rem;
+  .journey {
+    margin-top: 10%;
   }
 }
 @media only screen and (max-width: 991px) and (min-width: 769px) {
@@ -272,8 +261,8 @@ export default {
     padding-left: 0;
   }
   .map {
-    padding-left: 20%;
-    width: auto;
+    width: 50%;
+    margin: auto;
   }
 
   .foot {
@@ -284,6 +273,10 @@ export default {
     font-size: 1.7vw;
   }
 
+  .foot:not(p) {
+    font-size: 0.75em;
+  }
+
   /* .footer-content {
     padding-left: 0;
   } */
@@ -291,6 +284,10 @@ export default {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .foot li {
     font-size: 0.7rem;
+  }
+  .foot > p,
+  .map > p {
+    font-size: 14px;
   }
 }
 </style>

@@ -106,7 +106,7 @@ export default {
   },
 }
 </script>
-<style>
+<style scoped>
 /*  footer */
 .footer {
   width: 100%;
@@ -160,17 +160,14 @@ export default {
 .copyright {
   padding-top: 1%;
 }
-.foot p {
+.foot p,
+.map p {
   color: white;
   opacity: 0.3;
   font-size: 1.25rem;
   margin-top: 20px;
 }
-.map p {
-  color: white;
-  opacity: 0.3;
-  font-size: 1.25rem;
-}
+
 .icons p {
   color: white;
   opacity: 0.3;

@@ -275,7 +275,7 @@
 export default {}
 </script>
 
-<style>
+<style scoped>
 .logo-company {
   margin: auto;
   margin-top: 210px;

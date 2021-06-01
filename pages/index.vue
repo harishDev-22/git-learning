@@ -92,23 +92,25 @@
         </div>
         <!--video -->
         <div id="video-box-container" class="box-video-content">
-          <div class="paragraph playfair-font">
-            <p>See how it Works!</p>
-          </div>
-          <div
-            id="workflow-video-parent"
-            class="video_con"
-            @click="showStudentMissionVideo"
-          >
-            <iframe
-              id="workflow-student-video"
-              class="frame"
-              width="230"
-              height="230"
-              onclick="iframeclick()"
-              src="https://www.youtube.com/embed/joat68b10y0?enablejsapi=1&autoplay=0&mute=1"
-              allowFullScreen="allowFullScreen"
-            ></iframe>
+          <div class="box-wrapper">
+            <div class="paragraph playfair-font">
+              <p>See how it Works!</p>
+            </div>
+            <div
+              id="workflow-video-parent"
+              class="video_con"
+              @click="showStudentMissionVideo"
+            >
+              <iframe
+                id="workflow-student-video"
+                class="frame"
+                width="230"
+                height="230"
+                onclick="iframeclick()"
+                src="https://www.youtube.com/embed/joat68b10y0?enablejsapi=1&autoplay=0&mute=1"
+                allowFullScreen="allowFullScreen"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -155,20 +157,22 @@
         </div>
         <!--video-->
         <div class="box-video-content-company">
-          <div class="paragraph">
-            <p>See how it Works!</p>
-          </div>
-          <div class="video_con" @click="showCompanyMissionVideo">
-            <iframe
-              id="workflow-company-video"
-              class="frame"
-              width="230"
-              height="230"
-              src="https://www.youtube.com/embed/xi6GR070TCI?enablejsapi=1&autoplay=0&mute=1"
-              frameborder="2"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div class="box-wrapper">
+            <div class="video_con" @click="showCompanyMissionVideo">
+              <iframe
+                id="workflow-company-video"
+                class="frame"
+                width="230"
+                height="230"
+                src="https://www.youtube.com/embed/xi6GR070TCI?enablejsapi=1&autoplay=0&mute=1"
+                frameborder="2"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="paragraph">
+              <p>See how it Works!</p>
+            </div>
           </div>
         </div>
       </div>
@@ -301,7 +305,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .header {
   width: 100%;
   margin-top: 80px;
@@ -386,7 +390,6 @@ export default {
 }
 
 .box-content p {
-  padding-left: 5%;
   letter-spacing: 0.6px;
   line-height: 1.75;
   font-size: 1rem;
@@ -394,10 +397,11 @@ export default {
   font-style: normal;
   font-stretch: normal;
   color: #000;
+  margin: 0;
+  opacity: 0.7;
 }
 
 .box-content h2 {
-  padding-left: 5%;
   letter-spacing: 0.93px;
   font-size: 1.75rem;
   font-weight: bold;
@@ -442,31 +446,24 @@ export default {
 .box-col3 {
   background-color: #c9fd6a !important;
 }
+
 .box-content > .box-finder {
   margin: 0;
   margin-left: 1.4%;
   padding: 3.3% 3.6%;
   border-radius: 10px;
-  width: 30%;
-}
-.box-content > .box-analysis {
-  background-color: #5afffb;
-  margin: 20px;
-  padding: 30px;
-  border-radius: 10px;
-  width: 30%;
-}
-.box-content > .box-badges {
-  background-color: #c9fd6a;
-  margin: 20px;
-  padding: 30px;
-  border-radius: 10px;
-  width: 30%;
-}
-.box-test {
-  width: 30%;
+  width: 33%;
   letter-spacing: 0.6px;
   text-align: justify;
+}
+.box-content > .box-test {
+  background-color: #ff7ce7;
+  margin: 0 1.4%;
+  padding: 3.3% 3.6%;
+  border-radius: 10px;
+  letter-spacing: 0.6px;
+  text-align: justify;
+  width: 33%;
 }
 .box-test-content {
   width: 30%;
@@ -477,13 +474,6 @@ export default {
   background-color: #ff7ce7;
   margin: 20px;
   padding: 20px;
-  border-radius: 10px;
-}
-
-.box-content > .box-test {
-  background-color: #ff7ce7;
-  margin: 0 1.4%;
-  padding: 3.3% 3.6%;
   border-radius: 10px;
 }
 
@@ -545,10 +535,10 @@ export default {
   border-radius: 10px;
   display: flex;
   flex-direction: row;
+  margin: 0;
+  width: 67%;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  margin-right: 5.5%;
 }
 .box-video-content {
   background-image: linear-gradient(
@@ -573,9 +563,17 @@ export default {
   margin: 0;
   align-items: center;
   justify-content: center;
+  width: 67%;
 }
-.home-video-container2 .box-video-content {
-  margin-right: 5.5%;
+.box-video-content > .box-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.box-video-content-company > .box-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 .paragraph p {
   font-weight: bold;
@@ -586,9 +584,18 @@ export default {
   letter-spacing: 2.17px;
   line-height: normal;
   text-shadow: 0 2px 34px rgba(0, 0, 0, 0.5);
+  opacity: 1;
 }
 .video_con {
   padding: 3% 5%;
+}
+.box-video-content-company .video_con {
+  padding: 3% 5% 3% 0;
+  width: 50%;
+}
+.box-video-content-company .paragraph {
+  padding-left: 5%;
+  width: 50%;
 }
 .frame {
   border-radius: 50%;
@@ -622,7 +629,7 @@ export default {
   text-align: center;
   overflow: hidden;
   font-size: 28px;
-  padding: 170px 0 10% 15%;
+  padding: 170px 0 120px 0;
 }
 .image-test {
   border-radius: 50%;
@@ -640,7 +647,8 @@ export default {
 }
 
 .slide {
-  width: 80%;
+  width: 77%;
+  margin: auto;
 }
 .slide p {
   font-size: 1.25rem;
@@ -651,10 +659,11 @@ export default {
   text-align: center;
   line-height: 50px;
 }
-.image-slider p {
+
+/* .image-slider p {
   width: 80%;
   padding: 0 0 0 10%;
-}
+} */
 
 .map p {
   margin-top: 20px;
@@ -807,7 +816,7 @@ export default {
   }
   .box-content > .box-test {
     margin: 2%;
-    padding: 8%;
+    padding: 5%;
     width: auto;
   }
   .box-content > .box-test-content {
@@ -815,7 +824,7 @@ export default {
   }
   .box-content > .box-finder {
     margin: 2%;
-    padding: 8%;
+    padding: 5%;
     border-radius: 10px;
     width: auto;
   }
@@ -903,7 +912,7 @@ export default {
     padding-left: 0%;
   }
   .slider {
-    padding: 50px 0 10% 0;
+    padding: 50px 2% 10% 2%;
   }
   .slide {
     width: auto;
@@ -912,10 +921,11 @@ export default {
   .invert {
     font-size: 3rem;
   }
-  .image-slider p {
+
+  /* .image-slider p {
     width: 90%;
     font-size: 1rem;
-  }
+  } */
 
   /* index page ad video */
   .ad-video {
@@ -929,14 +939,40 @@ export default {
   #company-video-container {
     height: 70vh;
   }
+  .box-video-content > .box-wrapper {
+    flex-direction: column;
+  }
+  .box-video-content-company > .box-wrapper {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .box-video-content-company .paragraph {
+    width: auto;
+  }
+  .body-box h1 {
+    padding-left: 5%;
+  }
+  .box-video-content-company .video_con {
+    width: auto;
+    padding: 0;
+  }
+  .slide p {
+    font-size: 1rem;
+  }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
   .box-video-content,
-  .box-video-content-company {
+  .box-video-content-company,
+  .box-video-content > .box-wrapper {
     flex-direction: column;
+  }
+  .box-video-content-company > .box-wrapper {
+    flex-direction: column-reverse;
     width: 100%;
   }
-
+  .box-video-content-company .paragraph {
+    width: auto;
+  }
   .para p,
   .paragraph p {
     font-size: 3.8vw;
@@ -944,6 +980,15 @@ export default {
   }
   .box-content p {
     padding-left: 0%;
+  }
+  .box-video-content > .box-wrapper {
+    flex-direction: column;
+  }
+  .box-video-content-company .video_con {
+    width: auto;
+  }
+  .slide p {
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -969,14 +1014,13 @@ export default {
   .box-video-content,
   .box-video-content-company {
     flex-direction: column;
-    width: 100%;
   }
   .box-content p {
     padding-left: 0%;
   }
   .box-content,
   .box-content.home-video-container2 {
-    margin: 5%;
+    margin: 1.4% 5%;
     width: auto;
   }
   .home-video-container2 .box-video-content,
@@ -986,6 +1030,11 @@ export default {
   .box-content > .box-finder,
   .box-content > .box-test {
     width: 33%;
+  }
+
+  .box-video-content-company .video_con {
+    padding: 3% 5% 3% 5%;
+    width: auto;
   }
 }
 </style>

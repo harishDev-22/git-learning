@@ -7,7 +7,7 @@
       class="Group-Copy logo-company"
     />
     <div class="header">
-      <div class="about-content playfair-font">About Us</div>
+      <div class="info-header playfair-font">About Us</div>
     </div>
     <!-- Sub header -->
     <div class="subheader">
@@ -22,7 +22,7 @@
     </div>
     <!-- Journey header  -->
     <div class="jour">
-      <div class="jour-content playfair-font">Our Journey</div>
+      <div class="info-header">Our Journey</div>
     </div>
     <!-- Journey milestone -->
     <div>
@@ -280,6 +280,7 @@ export default {}
   margin: auto;
   margin-top: 210px;
   display: block;
+  padding-bottom: 0.7%;
 }
 .header {
   width: 100%;
@@ -293,12 +294,6 @@ export default {}
   position: relative;
   background-color: inherit;
   width: 50%;
-}
-.about-content {
-  padding-top: 0.7%;
-  letter-spacing: 2px;
-  font-size: 60px;
-  font-weight: bold;
 }
 
 .subheader {
@@ -442,10 +437,6 @@ export default {}
   .container {
     margin: 0 !important;
   }
-  .about-content,
-  .jour-content {
-    font-size: 45px;
-  }
 }
 @media only screen and (min-width: 320px) and (max-width: 640px) {
   .timeline::after {
@@ -473,10 +464,14 @@ export default {}
   .guide {
     width: auto;
   }
-  .about-content,
-  .jour-content {
-    font-size: 30px;
-    padding-top: 5%;
+  .journey {
+    margin-top: 10%;
+  }
+  .subheader-content {
+    width: 80%;
+  }
+  .logo-company {
+    margin-top: 100px;
   }
   #about-empty-containter {
     margin-top: -9% !important;

@@ -450,7 +450,7 @@ export default {
 .box-content > .box-finder {
   margin: 0;
   margin-left: 1.4%;
-  padding: 3.3% 3.6%;
+  padding: 3% 3.4%;
   border-radius: 10px;
   width: 33%;
   letter-spacing: 0.6px;

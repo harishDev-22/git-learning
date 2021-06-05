@@ -17,7 +17,7 @@
             >
               Mock Interview
             </NuxtLink>
-            <NuxtLink to="/mockInterview"> Student Programs </NuxtLink>
+            <NuxtLink to="/studentMentoring">Students mentoring </NuxtLink>
 
             <a
               href="https://recruit.zohopublic.com/recruit/Portal.na?iframe=false&digest=.WsqhQLLOxoxOoGMDi%40yUnGAUnkE7bVo.a85bxdBEmQ-"
@@ -32,7 +32,7 @@
           <div class="foot">
             <p>Resources</p>
             <a href="https://blog.spotknack.com" target="blank"> Blog </a>
-            <NuxtLink to="/">FAQ </NuxtLink>
+            <NuxtLink to="/faq">FAQ </NuxtLink>
             <NuxtLink to="/">Guidelines </NuxtLink>
             <NuxtLink to="/">Terms and Conditions </NuxtLink>
             <NuxtLink to="/">Privacy Policy </NuxtLink>
@@ -40,7 +40,6 @@
           <div class="foot">
             <p>Company</p>
 
-            <NuxtLink to="/studentMentoring">student mentoring </NuxtLink>
             <NuxtLink to="/">Mentees </NuxtLink>
             <a href="https://spotknack.com/views/mission2021/">
               Mission 2021

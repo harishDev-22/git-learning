@@ -1,5 +1,5 @@
 <template>
-  <div class="home-page-container">
+  <div class="home-page-container wrapper">
     <!-- Initial youtube video -->
     <div v-if="infoVideo" id="video-container">
       <h3 class="youtube-video-heading">Spotknack's Mission 2021</h3>
@@ -685,6 +685,7 @@ export default {
   align-items: center;
   position: fixed;
   top: 25%;
+  left: 0;
   background: #fff;
   z-index: 10;
 }

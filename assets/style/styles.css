@@ -62,7 +62,17 @@
 .navbar-link:hover {
   text-decoration: none !important;
 }
-.p-text {
+.sm-font {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.33;
+  letter-spacing: 0.6px;
+}
+.p-text,
+.program-list li {
   font-family: Poppins;
   font-size: 16px;
   font-weight: normal;
@@ -83,11 +93,29 @@
   align-items: center;
   justify-content: center;
 }
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.flex-row-start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
 .flex-row-center-space-bw {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+.flex-row-center-space-even {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .flex-wrap {
   display: flex;
@@ -132,6 +160,14 @@
 .mt-10 {
   margin-top: 10px;
 }
+.mt-15 {
+  margin-top: 15px;
+}
+/* Mentoring image style */
+.mentoring-images {
+  width: 39%;
+  max-height: 352px;
+}
 @media only screen and (max-width: 640px) {
   .logo {
     width: 100px;
@@ -145,16 +181,42 @@
   .sub-header-H3 {
     font-size: 20px;
   }
+  .mentoring-images {
+    width: 60%;
+    height: auto;
+  }
 }
 
-@media only screen and (min-width: 640px) and (max-width: 991px) {
+@media only screen and (min-width: 640px) and (max-width: 767px) {
   .info-header {
-    font-size: 45px;
+    font-size: 35px;
+  }
+  .sub-header-H2 {
+    font-size: 27px;
+  }
+  .sub-header-H3 {
+    font-size: 23px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .info-header {
+    font-size: 40px;
   }
   .sub-header-H2 {
     font-size: 30px;
   }
   .sub-header-H3 {
     font-size: 25px;
+  }
+  .mentoring-images {
+    width: 300px;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .wrapper {
+    max-width: 1440px;
+    margin: auto !important;
+    margin-bottom: 100px !important;
   }
 }

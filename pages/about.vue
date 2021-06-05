@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="wrapper">
     <!-- Header -->
     <img
       src="~assets/images/Spotknacklogo.svg"

@@ -1,6 +1,33 @@
 <template>
-  <div>
-    <div class="body-content">
+  <div class="wrapper">
+    <div class="flex-row-center-space-even">
+      <div class="flex-col-center">
+        <h2 class="info-header">Mock Interview</h2>
+        <p class="p-text text-center mt-10">
+          Become confident by attending mock interviews.Get constructive
+          feedback from Mock Interviews and improve
+        </p>
+        <div class="button-align">
+          <a
+            href="http://bit.ly/spotknack_interview"
+            title="Spotknack's Mission 2021 : Student Registration"
+            target="_blank"
+            onclick="zforms_open_window(this.href, 648, 700); return false"
+          >
+            <button class="button-box poppins-font">Apply</button></a
+          >
+        </div>
+      </div>
+
+      <img
+        class="mentoring-images"
+        src="~assets/images/mock.svg"
+        width="100%"
+        height="100%"
+        alt="skillanalysis"
+      />
+    </div>
+    <!-- <div class="body-content">
       <div class="box-content-body">
         <div class="box-content-finder flex-col-center">
           <h2 class="info-header">Mock Interview</h2>
@@ -25,7 +52,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Why mock Interview content -->
     <div class="feature-description">
@@ -100,6 +127,14 @@
 export default {}
 </script>
 <style scoped>
+.flex-row-center-space-even {
+  margin: 7.6% 5%;
+}
+
+.flex-col-center {
+  margin-right: 5%;
+  width: 60%;
+}
 .button-box {
   width: 229px;
   height: 59px;
@@ -174,6 +209,7 @@ export default {}
 .box-content-analysis {
   width: 50%;
   padding-left: 10%;
+  max-height: 352px;
 }
 .feature-description {
   width: 66%;
@@ -209,6 +245,13 @@ export default {}
   }
   .box-content-analysis {
     padding: 0;
+  }
+  .flex-row-center-space-even {
+    flex-direction: column-reverse;
+  }
+  .flex-col-center {
+    width: 80%;
+    margin: auto;
   }
 }
 </style>

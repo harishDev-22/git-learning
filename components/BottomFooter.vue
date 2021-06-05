@@ -39,6 +39,8 @@
           </div>
           <div class="foot">
             <p>Company</p>
+
+            <NuxtLink to="/studentMentoring">student mentoring </NuxtLink>
             <NuxtLink to="/">Mentees </NuxtLink>
             <a href="https://spotknack.com/views/mission2021/">
               Mission 2021

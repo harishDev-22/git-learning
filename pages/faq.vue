@@ -163,7 +163,6 @@ export default {
 /* icon text style */
 .plus-b {
   position: relative;
-  top: -2px;
   font-size: 24px;
   font-weight: bold;
   font-stretch: normal;

@@ -29,8 +29,11 @@
 .box-content p,
 .box-content a,
 .content p,
-.foot a {
-  font-family: 'Poppins';
+.foot a,
+.guide-line-content > *,
+.student-mission-points p,
+.student-mission-points {
+  font-family: 'Poppins' !important;
 }
 /* index-page header font family */
 .playfair-font,
@@ -40,8 +43,22 @@
 .box-content h2,
 .box-content-finder h2,
 .paragraph p,
-.content h2 {
+.content h2,
+.mission-count-number,
+.student-mission-header {
   font-family: 'Playfair Display';
+}
+.mt-05 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-22 {
+  margin-top: 22px;
 }
 /* navigation menu */
 .navbar-link {
@@ -62,6 +79,7 @@
 .navbar-link:hover {
   text-decoration: none !important;
 }
+
 .sm-font {
   font-family: Poppins;
   font-size: 12px;
@@ -73,13 +91,16 @@
 }
 .p-text,
 .program-list li {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: 0.6px;
   color: #000000;
+}
+.p-text {
+  line-height: 1.75;
 }
 .text-center {
   text-align: center;
@@ -146,6 +167,42 @@
   letter-spacing: 0.93px;
   color: #000000;
 }
+.sub-header-H4 {
+  font-family: 'Playfair Display';
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.93px;
+  color: #000000;
+}
+.poppins-font-14 {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.07;
+  letter-spacing: 0.6px;
+}
+
+.text-opacity {
+  opacity: 0.7;
+}
+/* Web-banner feature description */
+.web-banner .flex-col-center {
+  margin-right: 5%;
+  width: 60%;
+}
+.feature-description {
+  width: 66%;
+  margin: auto;
+  margin-top: 10%;
+}
+.feature-description h2 {
+  padding: 0 8.1%;
+}
 .feature-description-content {
   font-family: 'Poppins';
   font-size: 16px;
@@ -157,17 +214,114 @@
   color: #000000;
   margin: 0;
 }
-.mt-10 {
-  margin-top: 10px;
+.header-description-content {
+  font-family: 'Playfair Display';
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: 0.6px;
+  color: #000000;
 }
-.mt-15 {
-  margin-top: 15px;
+/* Features boxes styles */
+.feature-container {
+  margin: 22% 0 8% 5.4%;
 }
+.feature-container h2 {
+  margin-left: 1.8%;
+  margin-bottom: 50px;
+}
+.feature-container .feature-cluster {
+  width: 28.2%;
+  margin: 0 4.7% 44px 0;
+  border-radius: 10px;
+  padding: 2.63% 2.93%;
+}
+.feature-cluster .feature-description-content {
+  opacity: 0.7;
+}
+/* Features boxes styles */
+
 /* Mentoring image style */
 .mentoring-images {
   width: 39%;
+  max-width: 500px;
   max-height: 352px;
 }
+.logo-company-header {
+  margin: auto;
+  margin-top: 17.7%;
+  display: block;
+  padding-bottom: 0.7%;
+}
+/* Mentoring program pages styles */
+.apply-button {
+  font-family: 'Poppins';
+  min-width: 229px;
+  height: 59px;
+  border-radius: 8px;
+  background-color: #c9fd6a;
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
+  color: black;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  border-style: none;
+}
+.mentor-program-description {
+  width: 66%;
+}
+.button-block {
+  width: 22%;
+}
+.mentor-program-list {
+  list-style-image: url('~/assets/images/green-circle.svg');
+  margin-left: 4.1%;
+}
+
+/* application form */
+.form-group-block {
+  width: 84%;
+  max-width: 1060px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #5afffb;
+}
+form {
+  width: 73%;
+  margin: auto;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.form-group {
+  width: 55%;
+  margin: auto;
+  margin-top: 4%;
+}
+.form-control {
+  border: none;
+  border-radius: 10px;
+}
+.form-button {
+  margin-top: 7.2%;
+  width: 279px;
+  height: 61px;
+  border-radius: 10px;
+  background-color: #131415;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #fff;
+}
+
 @media only screen and (max-width: 640px) {
   .logo {
     width: 100px;
@@ -182,12 +336,54 @@
     font-size: 20px;
   }
   .mentoring-images {
+    margin-top: 50px;
     width: 60%;
     height: auto;
   }
+  .logo-company-header {
+    margin-top: 100px;
+  }
+
+  /* web-banner info  templates  */
+
+  .web-banner {
+    flex-direction: column-reverse;
+  }
+  .web-banner .flex-col-center {
+    width: 80%;
+    margin: auto;
+  }
+  .feature-description {
+    width: 80%;
+    margin-top: 10%;
+  }
+  .feature-description h2 {
+    padding: 0;
+  }
+  .info-header {
+    margin-top: 20px;
+  }
+  /* web-banner info  templates  */
+  .feature-container .feature-cluster {
+    width: auto;
+    padding: 3%;
+    margin-bottom: 20px;
+  }
+  .flex-wrap {
+    flex-direction: column;
+  }
+  form {
+    width: 90%;
+  }
+  .form-group {
+    width: 100%;
+  }
+  .form-button {
+    height: 50px;
+  }
 }
 
-@media only screen and (min-width: 640px) and (max-width: 767px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   .info-header {
     font-size: 35px;
   }
@@ -197,8 +393,32 @@
   .sub-header-H3 {
     font-size: 23px;
   }
+  .feature-container {
+    margin: 22% 0 8% 0%;
+  }
+  .feature-description {
+    width: 80%;
+    margin-top: 10%;
+  }
+  .feature-description h2 {
+    padding: 0;
+  }
+  .feature-container .feature-cluster {
+    width: auto;
+    padding: 3%;
+    margin: 0 4.7% 20px 4.7%;
+  }
+  form {
+    width: 90%;
+  }
+  .form-group {
+    width: 100%;
+  }
+  .form-button {
+    height: 50px;
+  }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 769px) and (max-width: 991px) {
   .info-header {
     font-size: 40px;
   }
@@ -213,10 +433,14 @@
     height: auto;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .form-group {
+    width: 75%;
+  }
+}
 @media only screen and (min-width: 2000px) {
   .wrapper {
     max-width: 1440px;
-    margin: auto !important;
-    margin-bottom: 100px !important;
+    margin: 100px auto !important;
   }
 }

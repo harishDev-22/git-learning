@@ -308,7 +308,7 @@ export default {
 <style scoped>
 .header {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 16%;
   display: flex;
   justify-content: center;
   text-align: center;

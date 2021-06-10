@@ -33,9 +33,9 @@
             <p>Resources</p>
             <a href="https://blog.spotknack.com" target="blank"> Blog </a>
             <NuxtLink to="/faq">FAQ </NuxtLink>
-            <NuxtLink to="/">Guidelines </NuxtLink>
-            <NuxtLink to="/">Terms and Conditions </NuxtLink>
-            <NuxtLink to="/">Privacy Policy </NuxtLink>
+            <NuxtLink to="/guideLines">Guidelines </NuxtLink>
+            <NuxtLink to="/termsAndConditions">Terms and Conditions </NuxtLink>
+            <NuxtLink to="/privacyPolicy">Privacy Policy </NuxtLink>
           </div>
           <div class="foot">
             <p>Company</p>
@@ -47,7 +47,7 @@
             <NuxtLink to="/">Campus Ambassadors </NuxtLink>
             <NuxtLink to="/">Spotknack for Startups </NuxtLink>
             <NuxtLink to="/">Spotknack for Educators </NuxtLink>
-            <NuxtLink to="/">Donate </NuxtLink>
+            <NuxtLink to="/donate">Donate </NuxtLink>
           </div>
 
           <div class="foot">

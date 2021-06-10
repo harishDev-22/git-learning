@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="light">
+    <b-navbar toggleable="lg" type="light" fixed="top" variant="lignt">
       <b-navbar-brand href="#">
         <img
           class="logo"
@@ -35,7 +35,9 @@ export default {
   animation: 1s appear;
   margin: auto;
 }
-
+.navbar {
+  background: white !important;
+}
 @keyframes appear {
   0% {
     opacity: 0;

@@ -198,9 +198,12 @@
               :key="index"
               class="flex-col-center mentoring-career"
             >
-              <a href="frontend_developer.html">
+              <NuxtLink :to="item.link">
+                <img :src="item.src" width="70" alt=""
+              /></NuxtLink>
+              <!-- <a href="frontend_developer.html">
                 <img :src="item.src" width="70" alt="" />
-              </a>
+              </a> -->
               <p class="text">{{ item.name }}</p>
             </div>
           </div>
@@ -230,34 +233,22 @@ export default {
         {
           name: 'Front End Developer',
           src: 'https://spotknackcompanywebsite.s3.us-east-2.amazonaws.com/icons/web+designer.png',
+          link: 'frontendDeveloper',
         },
         {
-          name: 'App Developer',
+          name: 'Android Developer',
           src: 'https://spotknackcompanywebsite.s3.us-east-2.amazonaws.com/icons/graphic-designer.png',
+          link: 'androidAppDeveloper',
         },
         {
           name: 'Graphic Designer',
           src: 'https://spotknackcompanywebsite.s3.us-east-2.amazonaws.com/icons/graphic-designer.png',
+          link: 'graphicsDesigner',
         },
         {
           name: 'Content Writer',
           src: 'https://spotknackcompanywebsite.s3.us-east-2.amazonaws.com/icons/content.png',
-        },
-        {
-          name: 'Front End Developer',
-          src: 'https://spotknackcompanywebsite.s3.us-east-2.amazonaws.com/icons/web+designer.png',
-        },
-        {
-          name: 'App Developer',
-          src: 'https://spotknackcompanywebsite.s3.us-east-2.amazonaws.com/icons/graphic-designer.png',
-        },
-        {
-          name: 'Graphic Designer',
-          src: 'https://spotknackcompanywebsite.s3.us-east-2.amazonaws.com/icons/graphic-designer.png',
-        },
-        {
-          name: 'Content Writer',
-          src: 'https://spotknackcompanywebsite.s3.us-east-2.amazonaws.com/icons/content.png',
+          link: 'contentWriter',
         },
       ],
       activeItem: 0, // track currently active item
@@ -303,7 +294,7 @@ export default {
   visibility: hidden;
 }
 .wrapper {
-  margin: 7.6% 5%;
+  margin: 16.6% 5%;
 }
 .program-description {
   margin-top: 70px;
@@ -326,6 +317,7 @@ export default {
 .program-list {
   list-style: url('~assets/images/green-circle.svg');
   margin-left: 6.7%;
+  width: 60%;
 }
 .program-list li {
   margin-bottom: 10px !important;
@@ -408,13 +400,20 @@ export default {
   .carousel-container {
     flex-direction: row !important;
   }
+  .program-list {
+    list-style: url('~assets/images/green-circle.svg');
+    margin-left: 6.7%;
+    width: auto;
+  }
 
-  /* .carousel {
-    overflow-x: scroll;
-  } */
   .mentor-container {
     width: 200px !important;
     overflow: hidden;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .program-list {
+    width: 80% !important;
   }
 }
 </style>

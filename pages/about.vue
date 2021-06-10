@@ -4,7 +4,7 @@
     <img
       src="~assets/images/Spotknacklogo.svg"
       alt="Spotknack"
-      class="Group-Copy logo-company"
+      class="Group-Copy logo-company-header"
     />
     <div class="header">
       <div class="info-header playfair-font">About Us</div>
@@ -276,12 +276,6 @@ export default {}
 </script>
 
 <style scoped>
-.logo-company {
-  margin: auto;
-  margin-top: 210px;
-  display: block;
-  padding-bottom: 0.7%;
-}
 .header {
   width: 100%;
   display: flex;
@@ -470,9 +464,7 @@ export default {}
   .subheader-content {
     width: 80%;
   }
-  .logo-company {
-    margin-top: 100px;
-  }
+
   #about-empty-containter {
     margin-top: -9% !important;
   }

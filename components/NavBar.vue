@@ -13,7 +13,9 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
           <NuxtLink to="/About" class="navbar-link"> About </NuxtLink>
-          <NuxtLink to="/About" class="navbar-link"> Mission 2021 </NuxtLink>
+          <NuxtLink to="/missionSpotknack" class="navbar-link">
+            Mission 2021
+          </NuxtLink>
           <NuxtLink to="/About" class="navbar-link"> Login </NuxtLink>
           <NuxtLink to="/About" class="navbar-link"> Signup </NuxtLink>
         </b-navbar-nav>

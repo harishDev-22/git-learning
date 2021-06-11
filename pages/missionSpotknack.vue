@@ -291,10 +291,11 @@
         </div>
       </div>
       <!-- mentee stories -->
+
       <h2 class="student-mission-header text-center mentee-story-header">
         Our Mentees Success Stories !
       </h2>
-      <div class="mission-stories">
+      <!-- <div class="mission-stories">
         <div class="mission-mentee-details">
           <div class="mission-stories-container mission-mentee-block">
             <iframe
@@ -407,48 +408,37 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <!-- enter button(arrow) -->
-      <div class="center-item mission-button">
-        <img
-          src="~assets/images/arrow mark icon.svg"
-          class="story-send-button mentee-change-slide"
-          alt=""
-        />
-      </div>
-
-      <!-- mentor stories -->
-      <h2 class="student-mission-header text-center">
-        A Message From Our Mentors !
-      </h2>
-      <div class="mission-stories">
-        <div class="mission-mentor-details">
-          <div class="mission-stories-container mission-mentor-block">
+      <div>
+        <b-carousel
+          id="carousel-no-animation"
+          no-animation
+          :interval="interval"
+          controls
+          indicators
+          background="#ababab"
+          img-width="1024"
+          img-height="480"
+          style="text-shadow: 1px 1px 2px #333"
+          @sliding-start="onSlideStart"
+          @sliding-end="onSlideEnd"
+        >
+          <b-carousel-slide img-blank>
             <iframe
-              class="ad-video"
-              data-videoid="CZmxMZNVnDk"
+              class="youtube-video-carousel"
+              data-videoid="KjqWxFd_h8E"
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/CZmxMZNVnDk"
               frameborder="0"
               allowfullscreen="1"
             ></iframe>
-            <div class="mission-flex-row-container mission-align-center">
-              <p><b>Pranavi</b> - Front End Developer , Mentee</p>
-              <a href="#" class="mission-linkedin-link marginLeft10">
-                <img
-                  src="~assets/images/linkedin.svg"
-                  width="25"
-                  height="25"
-                  alt=""
-                />
-              </a>
-            </div>
-          </div>
-          <div class="mission-stories-container mission-mentor-block">
+          </b-carousel-slide>
+
+          <b-carousel-slide img-blank>
             <iframe
-              class="ad-video"
+              class="youtube-video-carousel"
               data-videoid="KjqWxFd_h8E"
               width="100%"
               height="100%"
@@ -456,106 +446,129 @@
               frameborder="0"
               allowfullscreen="1"
             ></iframe>
-            <div class="mission-flex-row-container mission-align-center">
-              <p><b>Pranavi</b> - Front End Developer , Mentee</p>
-              <a href="#" class="mission-linkedin-link marginLeft10">
-                <img
-                  src="~assets/images/linkedin.svg"
-                  width="25"
-                  height="25"
-                  alt=""
-                />
-              </a>
-            </div>
-          </div>
-          <div class="mission-stories-container mission-mentor-block">
+          </b-carousel-slide>
+
+          <b-carousel-slide img-blank>
             <iframe
-              class="ad-video"
-              data-videoid="VCKE9mScFWo"
+              class="youtube-video-carousel"
+              data-videoid="KjqWxFd_h8E"
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/VCKE9mScFWo"
               frameborder="0"
               allowfullscreen="1"
             ></iframe>
-            <div class="mission-flex-row-container mission-align-center">
-              <p><b>Pranavi</b> - Front End Developer , Mentee</p>
-              <a href="#" class="mission-linkedin-link marginLeft10">
-                <img
-                  src="~assets/images/linkedin.svg"
-                  width="25"
-                  height="25"
-                  alt=""
-                />
-              </a>
-            </div>
-          </div>
-          <div class="mission-stories-container mission-mentor-block">
+          </b-carousel-slide>
+
+          <b-carousel-slide img-blank>
             <iframe
-              class="ad-video"
-              data-videoid="42B0rEw6kF4"
+              class="youtube-video-carousel"
+              data-videoid="KjqWxFd_h8E"
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/42B0rEw6kF4"
               frameborder="0"
               allowfullscreen="1"
             ></iframe>
-            <div class="mission-flex-row-container mission-align-center">
-              <p><b>Pranavi</b> - Front End Developer , Mentee</p>
-              <a href="#" class="mission-linkedin-link marginLeft10">
-                <img
-                  src="~assets/images/linkedin.svg"
-                  width="25"
-                  height="25"
-                  alt=""
-                />
-              </a>
-            </div>
-          </div>
-          <div class="mission-stories-container mission-mentor-block">
+          </b-carousel-slide>
+
+          <b-carousel-slide
+            caption="Blank Image"
+            img-blank
+            img-alt="Blank image"
+          >
             <iframe
-              class="ad-video"
-              data-videoid="HjhV-IxHwHU"
+              class="youtube-video-carousel"
+              data-videoid="KjqWxFd_h8E"
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/HjhV-IxHwHU"
               frameborder="0"
               allowfullscreen="1"
             ></iframe>
-            <div class="mission-flex-row-container mission-align-center">
-              <p><b>Pranavi</b> - Front End Developer , Mentee</p>
-              <a href="#" class="mission-linkedin-link marginLeft10">
-                <img
-                  src="~assets/images/linkedin.svg"
-                  width="25"
-                  height="25"
-                  alt=""
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- enter button(arrow) -->
-      <!-- enter button(arrow) -->
-      <div class="center-item mission-button">
-        <img
-          src="~assets/images/arrow mark icon.svg"
-          class="story-send-button mentor-change-slide"
-          alt=""
-        />
+          </b-carousel-slide>
+        </b-carousel>
       </div>
 
-      <br />
+      <!-- mentor stories -->
+      <!-- <h2 class="student-mission-header text-center">
+        A Message From Our Mentors !
+      </h2> -->
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      noAnimation: true,
+      interval: 0,
+    }
+  },
+  methods: {
+    onSlideStart() {},
+
+    onSlideEnd() {
+      /* eslint no-console:['error',{allow:['log']}], */
+      const iframe = document.querySelectorAll('.youtube-video-carousel')
+      iframe.forEach((e) => {
+        if (e !== null) {
+          const iframeSrc = e.src
+          e.src = iframeSrc
+        }
+      })
+    },
+  },
+}
 </script>
 
 <style>
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  top: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #fff;
+  text-align: center;
+  width: 70%;
+  height: 90%;
+}
+.carousel {
+  width: 50%;
+  margin: auto;
+  background: transparent !important;
+}
+.carousel-indicators {
+  z-index: 100;
+  position: relative;
+}
+.carousel-indicators li {
+  background-color: grey;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  font-size: 20px;
+  z-index: 100;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+.carousel-control-next-icon {
+  background-image: url('~assets/images/next.png');
+}
+.carousel-control-prev-icon {
+  background-image: url('~assets/images/left-arrow.png');
+}
+.carousel-indicators .active {
+  background-color: black;
+}
+.carousel-item {
+  background-color: white !important;
+}
 .info-image {
   height: 100vh;
   min-height: 500px;
@@ -863,7 +876,9 @@ export default {}
   .item {
     min-width: 90%;
   }
-
+  .carousel {
+    width: 80%;
+  }
   .student-mission,
   .mentor-mission,
   .mission-stories {
@@ -895,6 +910,16 @@ export default {}
 
   .story-send-button {
     width: 10%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 641px) {
+  .carousel {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .info-image {
+    height: 40vh;
   }
 }
 </style>

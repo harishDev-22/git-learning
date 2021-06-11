@@ -191,64 +191,9 @@ export default {
 .wrapper {
   margin: 11% 5% 15% 5%;
 }
-
-/* Application form  styles */
-.form-group-block {
-  width: 84%;
-  max-width: 1060px;
-  margin: auto;
-  border-radius: 10px;
-  background-color: #5afffb;
-}
-form {
-  width: 73%;
-  margin: auto;
-  padding-top: 55px;
-  padding-bottom: 55px;
-}
-.form-group {
-  width: 55%;
-  margin: auto;
-  margin-top: 4%;
-}
-.form-control {
-  border: none;
-  border-radius: 10px;
-}
-.form-button {
-  margin-top: 7.2%;
-  width: 279px;
-  height: 61px;
-  border-radius: 10px;
-  background-color: #131415;
-  font-size: 24px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.8px;
-  color: #fff;
-}
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .wrapper {
     margin: 15% 5% 15% 5%;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .form-group {
-    width: 75%;
-  }
-}
-@media screen and (max-width: 768px) {
-  form {
-    width: 90%;
-  }
-  .form-group {
-    width: 100%;
-  }
-  .form-button {
-    height: 50px;
   }
 }
 </style>
